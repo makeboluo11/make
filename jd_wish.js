@@ -61,7 +61,7 @@ if ($.isNode()) {
       await jd_wish();
     }
   }
-  let res = await getAuthorShareCode('https://action-1251995682.file.myqcloud.com/shareCodes/wish.json')
+  let res = await getAuthorShareCode('https://action-1251995682.file.myqcloud.com/shareCodes/wish1.json')
   $.shareCode = [...$.shareCode, ...(res || [])]
   for (let i = 0; i < cookiesArr.length; i++) {
     if (cookiesArr[i]) {
