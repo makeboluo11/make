@@ -10,7 +10,7 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
 let cookiesArr = [], cookie = '', message = '';
 let ownCode = null;
-let helpAu = true; //默认帮助作者，领一个活动，不开卡，realme店铺活动
+let helpAu = false; //默认帮助作者，领一个活动，不开卡，realme店铺活动
 if ($.isNode()) {
     Object.keys(jdCookieNode).forEach((item) => {
         cookiesArr.push(jdCookieNode[item])
